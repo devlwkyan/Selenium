@@ -1,5 +1,6 @@
 public class Main{
     public static void main( String[] args ){
-        Example x = new Example( );
+        String[] urls = {"buscape.com.br"};
+        Fire x = new Fire(urls);
     }
 }

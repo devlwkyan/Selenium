@@ -21,8 +21,11 @@ public class Fire{
         for ( int i = 0; i < url.length; i++ ) {
             if(i == 0){
                 obj.get( "http://www."+ url[i] );
-                obj.findElement( By.id("search_form_input_homepage")).sendKeys( "letskodeit" );
-                obj.findElement( By.id( "search_button_homepage" )).click();
+                obj.findElement( By.id("main-search")).sendKeys( "galaxy-s8" );
+                obj.findElement( By.id( "btn-search" )).click();
+//                obj.findElement( By.xpath( "//a[@href='/search/galaxy-s8?sort=MIN_PRICE&categoryId=77']" )).click();
+                obj.findElement( By.xpath( "//*[contains(@value, 'MIN_PRICE'" ) ).click();
+                obj.findElement( By.className( "btn__flat--card btn__go-pu" ) ).sendKeys( "COMPARE MAIS PREÇOS" );
             }
         }
 
